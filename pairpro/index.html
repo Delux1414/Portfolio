@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>espotifai</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><i class='bx bx-home' style='color:#a7a7a7'  ></i><a href="#">Inicio</a></li>
+                <li><i class='bx bx-search-alt-2' style='color:#a7a7a7' ></i><a href="#">Buscar</a></li>
+            </ul><br>
+            <i class='bx bx-library' style='color:#a7a7a7' ></i><h1>Tu biblioteca</h1><i class='bx bx-plus' style='color:#a7a7a7' ></i>
+            <br><br>
+            <div class="playlist">
+                <h1>Crea tu primera playlist</h1>
+                <p>Es muy fácil, te vamos a ayudar.</p><br>
+                <button class="btn-playlist">Crear playlist</button><br><br>
+            </div><br>
+            <div class="podcast">
+                <h1>Busquemos algunos podcast para seguir.</h1>
+                <p>Te mantendremos al tanto de nuevos episodios.</p><br>
+                <button class="btn-podcast">Explorar podcast</button><br><br>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="idioma">
+                <button><i class='bx bx-world' style='color:#797979' ></i>Español de Latinoamérica</button>
+            </div>
+        </nav>
+        
+        <div class="main">
+            <div class="menu-options">
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Registrarse</a>
+            </div>
+            <br><br><br>
+            
+            <div class="image-container image-grid">
+                <div class="slider">
+                    <img src="images/ban.jpg" alt="Imagen 1">
+                    <img src="images/music1.jpg" alt="Imagen 2">
+                    <img src="images/music2.jpg" alt="Imagen 3">
+                    <img src="images/ban.jpg" alt="Imagen 4">
+                    <img src="images/ban.jpg" alt="Imagen 5">
+                    <img src="images/ban.jpg" alt="Imagen 6">
+                </div>
+            </div>
+
+            <!-- Botones de control del slider -->
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Agrega el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
