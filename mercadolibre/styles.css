@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 50px;
+    display: grid;
+    grid-template: "logo input-busqueda hamburguer-menu carrito" /
+                    70px    1fr         50px            50px;
+}
+
+.logo{
+    grid-area: logo;
+    background-color: #faf25c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 60px;
+}
+
+.input-busqueda{
+    grid-area: input-busqueda;
+    background-color: #faf25c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-bus{
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-right: 10px;
+}
+
+::placeholder {
+    color: rgb(202, 202, 202);
+}
+
+.icon-lop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.icon1{
+    color: rgb(202, 202, 202);
+}
+
+.hamburguer-menu{
+    grid-area: hamburguer-menu;
+    background-color: #faf25c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.carrito{
+    grid-area: carrito;
+    background-color: #faf25c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.main-content{
+    display: grid;
+}
+
+.box-producto{
+    display: grid;
+    grid-template:  "box-img     box-info" 220px 
+                    "linea-div   linea-div"/
+                    3fr          4fr;
+    height: 200px;
+}
+
+.box-img {
+    grid-area: box-img;
+}
+
+.box-info{
+    grid-area: box-info;
+}
+
+.img-auto {
+    width: 100%;
+    /* height: 100%; */
+    padding: 20px;
+}
+
+.marcas{
+    display: block;
+    font-size: 1.2rem;
+}
+
+.precio {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.box-corazon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: rgba(230, 230, 230, 0.8);
+    position: relative;
+    top: -217px;
+    left: 235px;
+    z-index: 20;
+}
+
+.icon-corazon {
+    color:  rgb(94, 94, 241);
+    font-size: 1.1rem;
+}
+
+.linea-div {
+    grid-area: linea-div;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, .8);
+}
+
