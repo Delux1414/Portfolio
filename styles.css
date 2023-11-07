@@ -543,11 +543,17 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(359px, auto));
 }
 
+h2{
+    align-items: center;
+}
+
 .row{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .row img{
