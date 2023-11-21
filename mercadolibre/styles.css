@@ -9,11 +9,16 @@
 
 header {
     height: 70px;
-    background-color: rgb(245,241,89);
+    background-color: rgb(245, 241, 89);
     display: grid;
     grid-template: "logo box-input-busqueda hamburguer-menu carrito" /
-                    70px 1fr                40px            40px;
+        70px 1fr 40px 40px;
 }
+
+body {
+    background-color: rgb(235, 235, 235, .9);
+}
+
 .logo {
     grid-area: logo;
     display: flex;
@@ -21,15 +26,18 @@ header {
     align-items: center;
     /* padding-left: 30px; */
 }
+
 .img-logo {
     width: 100%;
 }
+
 .box-input-busqueda {
     grid-area: box-input-busqueda;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .input-busqueda {
     border-radius: 15px;
     width: 90%;
@@ -39,22 +47,25 @@ header {
     padding: 0 30px;
     font-size: 1.3em;
 }
+
 .hamburguer-menu {
     grid-area: hamburguer-menu;
 }
+
 .carrito {
     grid-area: carrito;
 }
+
 .icon-header {
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(48,48,48);
+    color: rgb(48, 48, 48);
     font-size: 1.3em;
 }
 
-.boxFiltro{
+.boxFiltro {
     height: 80px;
     width: 100%;
     background-color: #484848;
@@ -63,40 +74,50 @@ header {
 .box-producto {
     display: grid;
     grid-template: "box-img   box-info" auto
-                    "linea-div linea-div"/
-                    3fr       4fr;
+        "linea-div linea-div" /
+        3fr 4fr;
     /* height: 200px; */
 }
+
 .box-img {
     grid-area: box-img;
     position: relative;
 }
+
 .box-info {
     grid-area: box-info;
 }
+
 .linea-div {
     grid-area: linea-div;
     height: 1px;
     width: 100%;
-    background-color: rgb(200,200,200, .5);
+    background-color: rgb(200, 200, 200, .5);
 }
+
 .img-auto {
     padding: 15px;
     width: 100%;
 }
+
 .marca {
     display: block;
-    font-size:.9em;
+    font-size: .9em;
 }
+
 .precio {
     display: block;
     font-weight: regular;
     font-size: 1.3em;
 }
-.info-anyo, .info-kilometros, .info-ciudad {
+
+.info-anyo,
+.info-kilometros,
+.info-ciudad {
     font-size: .7em;
-    color: rgb(96,96,96);
+    color: rgb(96, 96, 96);
 }
+
 .box-corazon {
     width: 36px;
     height: 36px;
@@ -104,11 +125,12 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 18px;
-    background-color: rgba(250,250,250,.8);
+    background-color: rgba(250, 250, 250, .8);
     position: absolute;
     top: 0;
     right: 20px;
 }
+
 .icon-corazon {
     color: rgb(59, 148, 249);
     font-size: 1.1em;
@@ -123,31 +145,37 @@ header {
     background-color: aliceblue;
 }
 
-.filtros-hidden{
+.filtros-hidden {
     display: none;
 }
+
 @media only screen and (min-width: 550px) {
     .box-producto {
         font-size: 1.4em;
     }
+
     .marca {
         margin-top: 20px;
     }
 }
+
 @media only screen and (min-width: 600px) {
     .main-content {
-        background-color: rgb(235,235,235,.9);
+        background-color: rgb(235, 235, 235, .9);
         display: grid;
         grid-template: "box-filtro box-productos";
     }
+
     .box-productos {
         grid-area: box-productos;
     }
+
     .box-filtro {
         grid-area: box-filtro;
         width: 200px;
         height: 100vh;
     }
+
     .box-toggle {
         margin: 50px 0 0 50px;
         width: 120px;
@@ -164,11 +192,12 @@ header {
     .box-toggle-off {
         background-color: rgb(255, 255, 255);
     }
+
     .box-toggle-on {
-        background-color: rgb(52,131,250);
+        background-color: rgb(52, 131, 250);
     }
 
-    .box-toggle:hover .button-toggle{
+    .box-toggle:hover .button-toggle {
         left: 63;
     }
 
@@ -176,21 +205,99 @@ header {
         width: 54px;
         height: 54px;
         border-radius: 27px;
-        background-color: rgb(48,48,48,.8);
+        background-color: rgb(48, 48, 48, .8);
         padding-left: 3px;
         position: absolute;
-        
+
     }
-    
+
     .button-toggle-off {
         left: 3px;
         transition: left 300ms;
     }
 
-    .button-toggle-on{
+    .button-toggle-on {
         left: 63px;
         transition: left 300ms;
     }
 
+
+}
+
+.stars-center {
+    display: flex;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.stars-wrap {
+    display: flex;
+}
+
+
+.stars {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.fa-star {
+    font-size: 1.7em;
+    color: blue;
+}
+
+.fa-star-half-stroke {
+    font-size: 1.7em;
+    color: blue;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.input-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-con input {
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.btn-calificar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-calificar input {
+    width: 120px;
+    height: 30px;
+    background-color: blue;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    cursor: pointer;
+
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
     
+}
+
+.btn-calificar input:hover {
+    background-color: rgb(58, 58, 255);
+    border: 2px solid rgb(0, 0, 186);
 }
